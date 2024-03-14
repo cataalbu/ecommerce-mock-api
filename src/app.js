@@ -23,8 +23,8 @@ app.use('/api', router);
 
 mongoose.connection.on('connected', () => {
   console.log('Connected to MongoDB');
-  app.listen(8080, () => {
-    console.log('Server started at http://localhost:8080');
+  app.listen(process.env.PORT, () => {
+    console.log('Server started on PORT ', process.env.PORT);
   });
 });
 
