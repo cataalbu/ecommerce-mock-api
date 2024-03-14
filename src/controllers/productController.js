@@ -1,4 +1,4 @@
-import Product from '../models/product.js';
+import Product from '../models/Product.js';
 
 const listPaginatedProducts = async (req, res) => {
   try {
